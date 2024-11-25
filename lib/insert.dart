@@ -35,7 +35,7 @@ class _AddBookPageState extends State<AddBookPage> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Buku berhasil ditambahkan!')),
           );
-          Navigator.push(context, MaterialPageRoute(builder: (context) => const )) // Kembali ke halaman daftar buku
+          Navigator.pop(context); // Kembali ke halaman daftar buku
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Gagal menambahkan buku')),
